@@ -5,6 +5,7 @@ namespace App\Controllers;
 defined('FCPATH') or exit('No direct script access allowed');
 
 use App\Models\CatalogosModel;
+use App\Models\ConfiguracionModel;
 
 class Catalogos extends BaseController
 {
@@ -75,9 +76,6 @@ class Catalogos extends BaseController
         echo view('catalogos/departamentos');
         echo view('htdocs/footer');
     } //end departamentos
-
-
-    
     //Diego -> Catalogo de sucursales
     public function sucursales(){
         //Validar sessión
